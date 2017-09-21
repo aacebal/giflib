@@ -5,6 +5,7 @@ import com.adelacebal.giflib.model.Gif;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -16,9 +17,9 @@ public class GifController {
     public String listGifs() {
         return "home";
     }
-    @RequestMapping("/gif")
-    public String gifDetails(ModelMap modelMap) {
-        Gif gif = gifRepository.findByName("android-explosion");
+    @RequestMapping("/gif/{name}")
+    public String gifDetails(@PathVariable String name, ModelMap modelMap) {
+        Gif gif = gifRepository.findByName(name);
         modelMap.put("gif", gif);
         return "gif-details";
     }

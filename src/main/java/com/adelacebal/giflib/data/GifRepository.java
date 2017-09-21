@@ -11,12 +11,12 @@ import java.util.List;
 public class GifRepository {
     private static final List<Gif> ALL_GIFTS = Arrays.asList(
             new Gif("android-explosion", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("ben-and-mike", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("book-dominos", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("compiler-bot", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("cowboy-coder", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("infinite-andrew", LocalDate.of(2017, 9, 18), "Adel Acebal", true),
-            new Gif("rainbow-giphy", LocalDate.of(2017, 9, 18), "Adel Acebal", true)
+            new Gif("ben-and-mike", LocalDate.of(2017, 9, 18), "Ivelise Sola", false),
+            new Gif("book-dominos", LocalDate.of(2017, 9, 18), "Olga Suarez", true),
+            new Gif("compiler-bot", LocalDate.of(2017, 9, 18), "Alain Acebal", true),
+            new Gif("cowboy-coder", LocalDate.of(2017, 9, 18), "Isidro Suarez", false),
+            new Gif("infinite-andrew", LocalDate.of(2017, 9, 18), "Ana Valdez", true),
+            new Gif("rainbow-giphy", LocalDate.of(2017, 9, 18), "Alain Reina", false)
     );
 
     public Gif findByName(String name) {
